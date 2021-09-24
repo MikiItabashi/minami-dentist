@@ -1,0 +1,58 @@
+.pager {}
+
+.wp-pagenavi {
+    text-align: center;
+}
+
+.wp-pagenavi a,
+.wp-pagenavi a:hover,
+.wp-pagenavi span.current {
+    @extend .btn;
+    padding: 5px 11px;
+    border-radius: 4px;
+    margin: 6px;
+    @include mq('md') {
+        padding: 5px 11px;
+        font-size: 11px;
+        margin: 3.5px;
+    }
+}
+
+.wp-pagenavi span.current {
+    background: $main-color;
+    color: $background;
+}
+
+.wp-pagenavi .previouspostslink,
+.wp-pagenavi .nextpostslink {
+    @extend .btn--main;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.wp-pagenavi .previouspostslink,
+.wp-pagenavi .previouspostslink:hover {
+    padding-left: 37px;
+    padding-right: 15px;
+    &::before {
+        background: url(../../../WordPressTheme/assets/img/arrow-circle-left.svg) no-repeat;
+        left: 17px;
+    }
+}
+
+.wp-pagenavi .nextpostslink,
+.wp-pagenavi .nextpostslink:hover {
+    padding-right: 37px;
+    padding-left: 15px;
+    &::before {
+        background: url(../../../WordPressTheme/assets/img/arrow-circle-right.svg) no-repeat;
+        right: 17px;
+    }
+}

@@ -1,0 +1,8 @@
+.l-medical-special {
+    margin-top: 158px;
+    margin-bottom: 157px;
+    @include mq('md') {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}

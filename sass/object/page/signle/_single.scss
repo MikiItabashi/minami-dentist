@@ -1,0 +1,173 @@
+.single {}
+
+.single__title {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    line-height: (40 / 28);
+    @include mq('md') {
+        font-size: 20px;
+        line-height: (32 / 20);
+    }
+}
+
+.single__info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    @include mq('md') {
+        margin-top: 13px;
+    }
+}
+
+.single__date {
+    font-size: 16px;
+    color: $main-color;
+    position: relative;
+    padding-left: 20px;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 14px;
+        background: url(../../../WordPressTheme/assets/img/icon-time.svg) no-repeat;
+    }
+}
+
+.single__category {
+    background: #1391E6;
+    border-radius: 14px;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    padding: 6px 12px;
+    margin-left: 32px;
+}
+
+.single__content {
+    margin-top: 55px;
+}
+
+.single__content {
+    a {
+        color: $main-color;
+        text-decoration: underline;
+        transition: opacity $transition;
+        &:hover {
+            opacity: $opacity;
+        }
+    }
+    h2,
+    h3,
+    h4 {
+        color: $main-color;
+        font-weight: bold;
+        letter-spacing: 0.08em;
+    }
+    h2 {
+        margin-top: 57px;
+        font-size: 24px;
+        padding: 6px 20px;
+        border-left: 8px solid $main-color;
+        margin-bottom: 20px;
+        @include mq('md') {
+            font-size: 18px;
+            padding: 4px 14px;
+        }
+    }
+    h3 {
+        margin-top: 40px;
+        margin-bottom: 16px;
+        font-size: 20px;
+        padding-bottom: 3px;
+        border-bottom: 1px solid $main-color;
+        @include mq('md') {
+            font-size: 16px;
+            margin-top: 25px;
+            margin-bottom: 13px;
+        }
+    }
+    h4 {
+        font-size: 16px;
+        margin-bottom: 16px;
+        @include mq('md') {
+            font-size: 14px;
+            margin-bottom: 11px;
+        }
+    }
+    ul,
+    ol {
+        margin-top: 14px;
+        padding-left: 30px;
+        font-size: 16px;
+        line-height: (30 / 16);
+    }
+    ul {
+        list-style-type: disc;
+    }
+    ol {
+        list-style-type: decimal;
+    }
+}
+
+.single__pager {
+    text-align: center;
+    margin-top: 96px;
+    @include mq('md') {
+        margin: 38px -12px;
+    }
+    a {
+        padding: 7px 17px;
+        border-radius: 4px;
+        transition: background-color $transition;
+        margin: 0 15px;
+        display: inline-block;
+        @include mq('md') {
+            margin: 0 7px;
+        }
+    }
+    a[rel='prev'],
+    a[rel='next'] {
+        @extend .btn--main;
+        position: relative;
+        border: 1px solid $main-color;
+        padding: 8px 16px;
+        margin: 0;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+        }
+    }
+    a[rel='prev'] {
+        padding-left: 37px;
+        padding-right: 15px;
+        @include mq('md') {
+            padding-left: 35px;
+            padding-right: 14px;
+        }
+        &::before {
+            background: url(../../../WordPressTheme/assets/img/arrow-circle-left.svg) no-repeat;
+            left: 14px;
+        }
+    }
+    a[rel='next'] {
+        padding-right: 37px;
+        padding-left: 15px;
+        @include mq('md') {
+            padding-right: 35px;
+            padding-left: 14px;
+        }
+        &::before {
+            background: url(../../../WordPressTheme/assets/img/arrow-circle-right.svg) no-repeat;
+            right: 14px;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.bg-whole {
+    background: url(../../../WordPressTheme/assets/img/concept-bg.svg) no-repeat;
+    background-size: contain;
+    background-position: top left 33vw;
+    @include mq('md') {
+        background-position: top left 2vw;
+        background-size: 150%;
+    }
+}

@@ -1,0 +1,54 @@
+.reservation {}
+
+.reservation__inner {
+    max-width: 728px + strip-unit($padding-pc) * 2;
+}
+
+.reservation__subtitle {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    @include mq('md') {
+        font-size: 20px;
+    }
+}
+
+.reservation__phone {
+    margin-top: 28px;
+    display: inline-block;
+    @include mq('md') {
+        margin-top: 30px;
+    }
+}
+
+.reservation__time {
+    color: $main-color;
+    text-align: center;
+    font-size: 12px;
+}
+
+.reservation__text {
+    margin-top: 22px;
+}
+
+.reservation__email {
+    margin-top: 34px;
+}
+
+.reservation__content {
+    margin-top: 153px;
+    @include mq('md') {
+        margin-top: 97px;
+    }
+}
+
+.reservation__title {
+    text-align: center;
+}
+
+.reservation__form {
+    margin-top: 60px;
+    @include mq('md') {
+        margin-top: 65px;
+    }
+}

@@ -1,0 +1,18 @@
+.staffblog {}
+
+.staffblog__inner {}
+
+.staffblog__items {}
+
+.staffblog__item {
+    &:not(:last-child) {
+        margin-bottom: 21px;
+    }
+}
+
+.staffblog__pager {
+    margin-top: 90px;
+    @include mq('md') {
+        margin-top: 58px;
+    }
+}

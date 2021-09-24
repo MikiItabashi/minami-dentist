@@ -1,0 +1,11 @@
+.l-max {
+    margin: 0 auto;
+    max-width: $l-pc;
+    width: 100%;
+    height: inherit;
+    @include mq('md') {
+        max-width: 540px;
+        padding-right: $padding-sp;
+        padding-left: $padding-sp;
+    }
+}

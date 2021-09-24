@@ -1,0 +1,55 @@
+.policy {}
+
+.policy__title {
+    text-align: center;
+}
+
+.policy__wrapper {
+    margin-top: 60px;
+    padding: 180px 0 107px;
+    @include mq('md') {
+        margin-top: 40px;
+        padding-top: 100px;
+        padding-bottom: 0;
+    }
+}
+
+.policy__inner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    @include mq('md') {
+        display: block;
+    }
+}
+
+.policy__img {
+    width: 50%;
+    img {
+        border-radius: 0 20px 20px 0;
+    }
+    @include mq('md') {
+        margin-top: 37px;
+        margin-left: -$padding-sp;
+        width: 100%;
+    }
+}
+
+.policy__body {
+    margin-left: 95px;
+    width: 31.8%;
+    transform: translate(-3px, -36px);
+    @include mq('md') {
+        margin-left: 0;
+        width: 100%;
+        transform: none;
+    }
+}
+
+.policy__text {
+    margin-top: 40px;
+    @include mq('md') {
+        margin-top: 28px;
+    }
+}

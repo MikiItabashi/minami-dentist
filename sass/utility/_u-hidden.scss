@@ -1,0 +1,14 @@
+.u-mobile {
+    // PC時に非表示
+    display: none;
+    @include mq('md') {
+        display: block;
+    }
+}
+
+.u-desktop {
+    // スマホ時に非表示
+    @include mq('md') {
+        display: none;
+    }
+}

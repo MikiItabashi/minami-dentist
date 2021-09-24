@@ -1,0 +1,83 @@
+.medical-menu {}
+
+.medical-menu__general {}
+
+.medical-menu__special {
+    margin-top: 75px;
+    @include mq('md') {
+        margin-top: 81px;
+    }
+}
+
+.medical-menu__head {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.medical-menu__title {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    @include mq('md') {
+        font-size: 20px;
+    }
+}
+
+.medical-menu__label {
+    margin-left: 22px;
+    color: $background;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    border-radius: 24px;
+    padding: 5px 12px;
+    background: $main-color;
+    display: inline-flex;
+    @include mq('md') {
+        padding: 5px 12px;
+    }
+}
+
+.medical-menu__label--accent {
+    background: $accent-color;
+}
+
+.medical-menu__items {
+    margin-top: 28px;
+    display: flex;
+    justify-content: start;
+    @include mq('md') {
+        display: block;
+        margin-top: 31px;
+    }
+}
+
+.medical-menu__item {
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
+    @include mq('md') {
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.medical-menu__link {
+    display: inline-block;
+    padding: 13px 29px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    border-radius: 12px;
+    border: 2px solid;
+    @include mq('md') {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        font-size: 20px;
+        border: 1px solid;
+    }
+}

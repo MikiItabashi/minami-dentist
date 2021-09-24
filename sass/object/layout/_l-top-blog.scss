@@ -1,0 +1,8 @@
+.l-top-blog {
+    margin-top: 154px;
+    margin-bottom: 160px;
+    @include mq('md') {
+        margin-top: 104px;
+        margin-bottom: 100px;
+    }
+}

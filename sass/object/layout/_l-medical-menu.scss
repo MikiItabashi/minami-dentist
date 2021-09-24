@@ -1,0 +1,6 @@
+.l-medical-menu {
+    margin-top: 73px;
+    @include mq('md') {
+        margin-top: 60px;
+    }
+}

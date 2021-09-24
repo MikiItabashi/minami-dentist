@@ -1,0 +1,38 @@
+.title {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    letter-spacing: 0.08em;
+    &::before,
+    &::after {
+        position: absolute;
+        content: "";
+        background: url(../../../WordPressTheme/assets/img/title-deco.png) center center / contain;
+        width: 68px;
+        height: 18px;
+        top: 50%;
+        transform: translateY(-65%);
+    }
+    &::before {
+        left: -92px;
+    }
+    &::after {
+        right: -92px;
+    }
+    @include mq('md') {
+        font-size: 20px;
+        line-height: (40 / 28);
+        &::before,
+        &::after {
+            width: 48px;
+            height: 13px;
+        }
+        &::before {
+            left: -65px;
+        }
+        &::after {
+            right: -65px;
+        }
+    }
+}

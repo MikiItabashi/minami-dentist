@@ -1,0 +1,127 @@
+.top-slider {
+    .swiper-custom-parent {
+        max-width: 1163px;
+        width: 100%;
+        position: relative;
+        @include mq('md') {
+            width: 100%;
+        }
+    }
+    .swiper {
+        position: relative;
+        z-index: 1;
+    }
+    .swiper-wrapper {
+        margin: 0 auto;
+    }
+    .swiper-slide {
+        border-radius: 20px;
+        img,
+        picture {
+            border-radius: 20px;
+        }
+        &::before {
+            border-radius: 20px;
+        }
+        @include mq('md') {
+            border-radius: 0;
+            img,
+            picture {
+                border-radius: 0;
+            }
+            &::before {
+                border-radius: 0;
+            }
+        }
+    }
+    .swiper-lead-wrapper {
+        position: absolute;
+        bottom: 55px;
+        left: 63px;
+        z-index: 2;
+        @include mq('md') {
+            left: 20px;
+            bottom: 37px;
+        }
+    }
+    .swiper-lead {
+        color: $background;
+        display: inline-block;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 0.08em;
+        line-height: (54 / 32);
+        border-bottom: 4px dotted $background;
+        padding-top: 6px;
+        @include mq('md') {
+            font-size: 20px;
+            line-height: (34 / 20);
+        }
+    }
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        left: -25px;
+        bottom: 6px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        @include mq('md') {
+            left: -18px;
+            bottom: 20px;
+        }
+    }
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin-top: 10px;
+        @include mq('md') {
+            margin-top: 5px;
+        }
+    }
+    .swiper-pagination-bullet-active {
+        background: $main-color;
+    }
+    .swiper-pagination {
+        z-index: 5;
+        // width: auto;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: fit-content;
+        height: fit-content;
+        z-index: 5;
+        top: 48%;
+        &::after {
+            content: "";
+            background: url(../../../WordPressTheme/assets/img/arrow-left.png) no-repeat center center / contain;
+            width: 70px;
+            height: 70px;
+        }
+        @include mq('md') {
+            top: 50%;
+            &::after {
+                width: 42px;
+                height: 42px;
+            }
+        }
+    }
+    .swiper-button-prev {
+        left: -37px;
+        &::after {
+            background: url(../../../WordPressTheme/assets/img/arrow-left.png) no-repeat center center / contain;
+        }
+        @include mq('md') {
+            left: -20px;
+        }
+    }
+    .swiper-button-next {
+        right: -37px;
+        &::after {
+            background: url(../../../WordPressTheme/assets/img/arrow-right.png) no-repeat center center / contain;
+        }
+        @include mq('md') {
+            right: -20px;
+        }
+    }
+}

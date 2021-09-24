@@ -1,0 +1,112 @@
+.sidebar {}
+
+.sidebar__flex {
+    display: flex;
+    justify-content: space-between;
+    @include mq('md') {
+        display: block;
+    }
+}
+
+.sidebar__subhead {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #888888;
+}
+
+.sidebar__icon {
+    width: 24px;
+}
+
+.sidebar__title {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sidebar__clinic {}
+
+.sidebar__clinic-img {
+    margin-top: 20px;
+}
+
+.sidebar__clinic-name {
+    margin-top: 17px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sidebar__clinic-text {
+    margin-top: 9px;
+}
+
+.sidebar__clinic-link {
+    display: inline-block;
+    margin-top: 9px;
+    margin-left: 3px;
+    color: $main-color;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: -18px;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+        background: url(../../../WordPressTheme/assets/img/arrow.svg) no-repeat;
+    }
+}
+
+.sidebar__post {
+    margin-top: 56px;
+}
+
+.sidebar__post-items {
+    margin-top: 20px;
+}
+
+.sidebar__post-item {
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.sidebar__category {
+    margin-top: 59px;
+    @include mq('md') {
+        margin-top: 58px;
+    }
+}
+
+.sidebar__category-items {
+    margin-left: 20px;
+}
+
+.sidebar__category-item {
+    margin-top: 13px;
+    @include mq('md') {
+        margin-top: 11px;
+    }
+}
+
+.sidebar__category-link {
+    font-size: 16px;
+    position: relative;
+    padding-left: 12px;
+    transition: opacity $transition;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        border-style: solid;
+        border-width: 6px 0 6px 7px;
+        border-color: transparent transparent transparent $main-color;
+    }
+}

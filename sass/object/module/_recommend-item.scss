@@ -1,0 +1,55 @@
+.recommend-item {}
+
+.recommend-item__head {
+    text-align: center;
+    img {
+        max-width: 181px;
+    }
+}
+
+.recommend-item__icon {
+    text-align: center;
+    margin-top: 2px;
+    img {
+        max-width: 219px;
+        margin-top: 13px;
+    }
+    @include mq('md') {
+        margin-top: 12px;
+        img {
+            margin-top: 0;
+        }
+    }
+}
+
+.recommend-item__title {
+    text-align: center;
+    color: $background;
+    background: $main-color;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: (32 / 20);
+    letter-spacing: 0.08em;
+    border-radius: 22px;
+    padding: 5px 20px;
+    margin-top: -18px;
+    position: relative;
+    z-index: 1;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        bottom: -13px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 19px 10px 0 10px;
+        border-color: $main-color transparent transparent transparent;
+    }
+}
+
+.recommend-item__text {
+    margin-top: 35px;
+}

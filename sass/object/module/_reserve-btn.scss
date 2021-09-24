@@ -1,0 +1,20 @@
+.reserve-btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: (18 / 14);
+    position: fixed;
+    right: 0;
+    top: 176px;
+    border-radius: 20px 0px 0px 20px;
+    padding: 21px 17px;
+    text-align: center;
+    z-index: 10;
+}
+
+.reserve-btn__img {
+    width: 49px;
+}
+
+.reserve-btn__text {
+    margin-top: 12px;
+}

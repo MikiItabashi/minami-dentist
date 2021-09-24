@@ -1,0 +1,8 @@
+.l-contact {
+    margin-top: 75px;
+    margin-bottom: 102px;
+    @include mq('md') {
+        margin-top: 55px;
+        margin-bottom: 101px;
+    }
+}

@@ -1,0 +1,10 @@
+.l-single {
+    margin-top: 74px;
+    margin-bottom: 160px;
+    width: 66%;
+    @include mq('md') {
+        margin-top: 56px;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+}

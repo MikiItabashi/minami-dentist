@@ -1,0 +1,30 @@
+// 色
+$background: #fff; // 背景
+$text-color: #393939; // テキスト色
+$main-color: #1391E6; // メインカラー
+$sub-color01: #0060A0; // サブカラー01
+$sub-color02: #DFF1FD; // サブカラー02
+$accent-color: #EE5A6D; // アクセントカラー
+// マウスホバー
+$opacity: 0.7; // 透過度
+//トランジション
+$transition: 0.3s;
+// フォント
+$font-family-base: 'M PLUS Rounded 1c',
+sans-serif; // ベースフォント
+$font-size-base: 14px; // ベースフォントサイズ
+$font-weight-base: 500; // ベースフォントウェイト
+$lh: (24 / 14); // ベース行間
+// ---
+// レイアウト
+// ---
+$l-inner: 1000px; // インナー幅
+$l-header: 1200px; // ヘッダー幅
+$l-sp: 768px; // タブレットサイズ
+$l-tab: 1024px; // タブレットサイズ
+$l-md: 1100px; // タブレットサイズ
+$l-pc: 1280px; // パソコン幅
+// ブレークポイント（PC基準）
+$breakpoints: ( "sp": "screen and (max-width: #{$l-sp - 1})", "tab": "screen and (max-width: #{$l-tab - 1 })", "md": "screen and (max-width: #{$l-md - 1 })", "pc": "screen and (min-width: #{$l-pc})", );
+$padding-pc: 25px; // タブレット時の余白
+$padding-sp: 20px; // スマホ時の余白

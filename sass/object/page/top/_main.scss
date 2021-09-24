@@ -1,0 +1,45 @@
+.main {
+    padding-top: 120px;
+    @include mq('md') {
+        padding-top: 80px;
+    }
+}
+
+.main__inner {
+    max-width: 1214px;
+    width: 100%;
+}
+
+.main__contents {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: -36px 43px;
+    z-index: 2;
+    @include mq('md') {
+        display: block;
+        margin: -23px 0;
+    }
+}
+
+.main__news {
+    width: 50%;
+    margin-top: 18px;
+    @include mq('md') {
+        width: 100%;
+        margin-top: 35px;
+    }
+}
+
+.main__calender {
+    margin-left: 63px;
+    img {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        border-radius: 12px;
+    }
+    @include mq('md') {
+        margin-left: 0;
+    }
+}

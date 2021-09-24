@@ -1,0 +1,6 @@
+.l-staff-director {
+    margin-top: 74px;
+    @include mq('md') {
+        margin-top: 58px;
+    }
+}

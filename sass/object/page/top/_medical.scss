@@ -1,0 +1,55 @@
+.medical {}
+
+.medical__wrapper {
+    background: #DFF1FD;
+    padding-bottom: 94px;
+    margin-top: -6px;
+    @include mq('md') {
+        padding-top: 35px;
+    }
+}
+
+.medical__title {
+    text-align: center;
+}
+
+.medical__items {
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
+    @include mq('md') {
+        margin-top: 37px;
+        display: block;
+    }
+}
+
+.medical__item {
+    width: calc((100% - 80px) / 2);
+    &:not(:last-child) {
+        margin-right: 80px;
+    }
+    @include mq('md') {
+        width: 100%;
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 14px;
+        }
+    }
+}
+
+.medical__box {
+    margin-top: 61px;
+    padding: 37px 40px;
+    background: $background;
+    @include mq('md') {
+        margin-top: 12px;
+        padding: 20px;
+    }
+}
+
+.medical__text {
+    line-height: (28 / 14);
+    @include mq('md') {
+        line-height: (24 / 14);
+    }
+}

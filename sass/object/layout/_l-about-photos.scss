@@ -1,0 +1,8 @@
+.l-about-photos {
+    margin-top: 156px;
+    margin-bottom: 160px;
+    @include mq('md') {
+        margin-top: 101px;
+        margin-bottom: 100px;
+    }
+}

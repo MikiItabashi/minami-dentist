@@ -1,0 +1,45 @@
+.feature {}
+
+.feature__inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @include mq('md') {
+        display: block;
+    }
+}
+
+.feature__img {
+    width: 50%;
+    img {
+        border-radius: 20px 0 0 20px;
+    }
+    @include mq('md') {
+        margin-top: 37px;
+        margin-right: -$padding-sp;
+        margin-left: auto;
+        width: 100%;
+    }
+}
+
+.feature__body {
+    margin-right: 95px;
+    width: 31.8%;
+    transform: translateY(-6px);
+    @include mq('md') {
+        margin-right: 0;
+        width: 100%;
+        transform: none;
+    }
+}
+
+.feature__title {
+    white-space: nowrap;
+}
+
+.feature__text {
+    margin-top: 35px;
+    @include mq('md') {
+        margin-top: 28px;
+    }
+}

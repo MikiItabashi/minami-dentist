@@ -1,0 +1,14 @@
+.l-header {
+    margin: 0 auto;
+    max-width: $l-header + strip-unit($padding-pc) * 2;
+    width: 100%;
+    height: inherit;
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+    @include mq('md') {
+        max-width: 540px;
+        width: 100%;
+        padding-right: $padding-sp;
+        padding-left: $padding-sp;
+    }
+}

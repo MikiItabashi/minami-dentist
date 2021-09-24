@@ -1,0 +1,39 @@
+.bg-bottom {
+    position: relative;
+    transform: translateY(-2px);
+    &::before,
+    &::after {
+        position: absolute;
+        content: "";
+    }
+    &::before {
+        background: url(../../../WordPressTheme/assets/img/deco-kirakira-w.svg) no-repeat;
+        background-size: contain;
+        right: 19px;
+        top: -117px;
+        width: 125px;
+        height: 137px;
+    }
+    &::after {
+        background: url(../../../WordPressTheme/assets/img/deco-kirakira2-w.svg) no-repeat;
+        background-size: contain;
+        left: 41px;
+        top: -57px;
+        width: 57px;
+        height: 57px;
+    }
+    @include mq('md') {
+        &::before {
+            right: 10px;
+            top: -58px;
+            width: 53px;
+            height: 58px;
+        }
+        &::after {
+            left: 13px;
+            top: -39px;
+            width: 25px;
+            height: 25px;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.special {}
+
+.special__wrapper {
+    background: #DFF1FD;
+    @include mq('md') {
+        padding-top: 32px;
+    }
+}
+
+.special__inner {
+    padding-bottom: 75px;
+    @include mq('md') {
+        padding-bottom: 96px;
+    }
+}
+
+.special__title {
+    text-align: center;
+}
+
+.special__items {
+    margin-top: 55px;
+    @include mq('md') {
+        margin-top: 40px;
+    }
+}
+
+.special__item {
+    &:not(:last-child) {
+        margin-bottom: 42px;
+        @include mq('md') {
+            margin-bottom: 32px;
+        }
+    }
+}

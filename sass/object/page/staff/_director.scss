@@ -1,0 +1,103 @@
+.director {}
+
+.director__inner {}
+
+.director__title {
+    text-align: center;
+}
+
+.director__body {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    @include mq('md') {
+        margin-top: 45px;
+    }
+}
+
+.director__content {
+    width: calc((100% - 80px) / 2);
+    margin-top: -12px;
+    @include mq('md') {
+        width: 100%;
+    }
+}
+
+.director__lead {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    @include mq('md') {
+        font-size: 20px;
+    }
+}
+
+.director__message {
+    margin-top: 31px;
+    @include mq('md') {
+        margin-top: 25px;
+    }
+}
+
+.director__info {
+    margin-top: 15px;
+    text-align: right;
+    @include mq('md') {
+        margin-top: 35px;
+    }
+}
+
+.director__name {}
+
+.director__history {
+    margin-top: 55px;
+    @include mq('md') {
+        margin-top: 38px;
+    }
+}
+
+.director__history-title,
+.director__certification-title {
+    border-bottom: 1px solid $text-color;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.director__history-dl {}
+
+.director__history-list {
+    display: flex;
+    justify-content: start;
+    margin-top: 12px;
+}
+
+.director__history-year {}
+
+.director__history-text {
+    margin-left: 16px;
+}
+
+.director__certification {
+    margin-top: 27px;
+    @include mq('md') {
+        margin-top: 35px;
+    }
+}
+
+.director__certification-items {}
+
+.director__certification-item {
+    margin-top: 12px;
+}
+
+.director__img {
+    width: calc((100% - 80px) / 2);
+    border-radius: 20px;
+    margin-left: 80px;
+    img {}
+    @include mq('md') {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 37px;
+    }
+}
